@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.card {
+    width: 85%; /* Reduced width */
+    max-width: 400px; /* Smaller max width for compact layout */
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 20px; /* Adjusted padding */
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    height: auto; /* Auto height based on content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 25px;
+    flex: 1;
+    margin-right: 12px;
+    font-size: 16px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.weather-icon {
+    width: 100px;
+    margin: 20px auto;
+}
+
+.weather h1 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.weather h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.details {
+    display: flex;
+    flex-direction: column; /* Stack the details vertically */
+    align-items: center;
+    margin: 20px 0; /* Adjust margin */
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between columns */
+}
+
+.col img {
+    width: 30px; /* Smaller icon */
+    margin-right: 8px;
+}
+
+.humidity, .wind {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.card .footer {
+    margin-top: auto;
+    font-size: 14px;
+}
